@@ -36,9 +36,9 @@
 <li>Make sure you only test for<strong> correct inputs</strong>. there is no need to test for invalid inputs for this kata</li>
 </ul>
 <ol> </ol>
-<p><strong>String Calculator</strong></p>
+<p><strong>String Calculator Instructions</strong></p>
 <ol>
-<li>Create a simple String calculator with a method <strong>int Add(string numbers)</strong> <ol>
+<li>Create a simple String calculator with a method <strong>addNumbers(numberString)</strong> that returns an integer value <ol>
 <li>The method can take 0, 1 or 2 numbers, and will return their sum (for an empty string it will return 0) for example<strong> "" or "1" or "1,2"</strong></li>
 <li>Start with the simplest test case of an empty string and move to 1 and two numbers</li>
 <li>Remember to solve things as simply as possible so that you force yourself to write tests you did not think about</li>
@@ -50,7 +50,7 @@
 <li>the following input is NOT&nbsp;ok:&nbsp; "1,\n" (not need to prove it - just clarifying)</li>
 </ol></li>
 <li><ol><strong> Support different delimiters </strong>
-<li>to change a delimiter, the beginning of the string will contain a separate line that looks like this:&nbsp;&nbsp; .//[delimiter]\n[numbers.]. for example "//;\n1;2" should return three where the default delimiter is ";" . </li>
+<li>to change a delimiter, the beginning of the string will contain a separate line that looks like this:&nbsp;&nbsp; "//[delimiter]\n[numbers]". for example "//;\n1;2" should return three where the default delimiter is ";" . </li>
 <li>the first line is optional. all existing scenarios should still be supported</li>
 </ol></li>
 <li>Calling Add with a negative number will throw an exception .negatives not allowed. - and the negative that was passed.if there are multiple negatives, show all of them in the exception message                                            
